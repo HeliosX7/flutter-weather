@@ -2,6 +2,8 @@
 
 A weather app made using Flutter and OpenWeather API. It provides the live weather data for any location including over 200,000 cities. 
 
+<img src="https://github.com/HeliosX7/flutter-weather/blob/master/images/stack.JPG" height="250">
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
@@ -19,4 +21,21 @@ samples, guidance on mobile development, and a full API reference.
 
 ### Search screens
 
+<p>
+<img src="https://github.com/HeliosX7/flutter-weather/blob/master/images/search1.jpg" width="280" height="550">
+<img src="https://github.com/HeliosX7/flutter-weather/blob/master/images/search2.jpg" width="280" height="550">
+</p>
+
 ### Location screens
+
+<p>
+<img src="https://github.com/HeliosX7/flutter-weather/blob/master/images/location1.jpg" width="280" height="550">
+<img src="https://github.com/HeliosX7/flutter-weather/blob/master/images/location2.jpg" width="280" height="550">
+<img src="https://github.com/HeliosX7/flutter-weather/blob/master/images/location3.jpg" width="280" height="550">
+</p>
+
+<p>
+<img src="https://github.com/HeliosX7/flutter-weather/blob/master/images/location4.jpg" width="280" height="550">
+<img src="https://github.com/HeliosX7/flutter-weather/blob/master/images/location5.jpg" width="280" height="550">
+<img src="https://github.com/HeliosX7/flutter-weather/blob/master/images/location6.jpg" width="280" height="550">
+</p>
