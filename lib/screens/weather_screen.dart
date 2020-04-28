@@ -7,7 +7,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:weather/utilities/constants.dart';
 import 'package:weather/screens/location_screen.dart';
 
-final apiKey = "{ API key }"; //from openweathermap.org
+final apiKey = { API key }; // from openweathermap.org
 
 class WeatherScreen extends StatefulWidget {
   final String city;
@@ -29,8 +29,10 @@ class _WeatherScreenState extends State<WeatherScreen> {
     if (response.statusCode == 200) {
       var json = jsonDecode(response.body);
       return Weather.getWeather(json);
-    } else
+    } else {
+      print("Not found");
       return null;
+    }
   }
 
   @override
@@ -48,7 +50,14 @@ class _WeatherScreenState extends State<WeatherScreen> {
                 return snapshot.data == null
                     ? Container(
                         child: Center(
-                          child: Text("City not found"),
+                          child: Text(
+                            "City Not Found.",
+                            style: TextStyle(
+                                fontFamily: "Spartan",
+                                fontSize: 35,
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold),
+                          ),
                         ),
                       )
                     : getLocationScreen(snapshot.data);

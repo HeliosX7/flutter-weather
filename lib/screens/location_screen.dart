@@ -51,12 +51,14 @@ class LocationScreen extends StatelessWidget {
               color: Colors.transparent,
               onPressed: () {
                 String city = textFieldController.text;
-                Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => WeatherScreen(
-                              city: city,
-                            )));
+                if (city != "") {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => WeatherScreen(
+                                city: city,
+                              )));
+                }
               },
               child: Container(
                 width: 100,
